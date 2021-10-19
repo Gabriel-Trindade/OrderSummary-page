@@ -1,0 +1,118 @@
+@import "base";
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap");
+
+section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .boxpayment {
+        display: flex;
+        width: 400px;
+        height: 600px;
+        background-color: white;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        border-radius: 20px;
+        -webkit-box-shadow: 0px 10px 9px 2px rgba(0, 0, 0, 0.23);
+        box-shadow: 0px 10px 9px 2px rgba(0, 0, 0, 0.23);
+
+        .imgHero {
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+        }
+
+        .h2Above {
+            margin: $margin-above-photo;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .pAbove {
+            text-align: center;
+            padding: $padding-above-photo;
+            margin-bottom: 20px;
+            color: gray;
+        }
+
+        .plan {
+            width: 100%;
+            height: 20%;
+            text-align: center;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            .imgMusic {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            .textPlan {
+                font-weight: bold;
+                font-size: 15px;
+            }
+
+            .textSpan {
+                color: gray;
+            }
+
+            a {
+                margin-left: 40px;
+                color: $color-secondary;
+                font-size: 14px;
+
+                &:active {
+                    text-decoration: none;
+                    color: hsl(245, 75%, 52%);
+                }
+            }
+        }
+
+        .formbuttons {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .btnPayment {
+            height: 40px;
+            width: 300px;
+            text-align: center;
+            background-color: $color-secondary;
+            color: white;
+            align-self: center;
+            margin-bottom: 30px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 11px 12px -1px rgba(0, 0, 0, 0.171);
+            box-shadow: 0px 11px 12px -1px rgba(0, 0, 0, 0.32);
+            font-weight: bold;
+            z-index: 100;
+
+            &:active {
+                background-color: hsla(245, 75%, 52%, 0.63);
+            }
+        }
+
+        .btnCancel {
+            width: 300px;
+            align-self: center;
+            background-color: white;
+            border: none;
+            color: hsl(245, 56%, 26%);
+            font-weight: 500;
+
+            &:active {
+                color: hsl(245, 54%, 19%);
+                font-weight: bold;
+            }
+        }
+    }
+}
